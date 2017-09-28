@@ -1,0 +1,57 @@
+{
+    "inputs": [{
+        "id": "applyNumber",
+        "label": "申請番号",
+        "type": "text",
+        "value": "",
+        "disabled": ""
+    }, {
+        "id": "applyTitle",
+        "label": "案件名",
+        "type": "text",
+        "value": "",
+        "disabled": ""
+    }, {
+        "id": "applicant",
+        "label": "申請者",
+        "type": "text",
+        "value": "Takuo Fujimoto",
+        "disabled": "disabled"
+    }, {
+        "id": "organization",
+        "label": "申請者担当組織",
+        "type": "text",
+        "value": "System Integration Dept.",
+        "disabled": "disabled"
+    }, {
+        "id": "patternId",
+        "label": "パターン番号",
+        "type": "text",
+        "value": "P001",
+        "disabled": "disabled"
+    }, {
+        "id": "approvalLimitDate",
+        "label": "最終承認期限",
+        "type": "date",
+        "value": "",
+        "disabled": ""
+    }, {
+        "id": "activateDate",
+        "label": "配信予定日",
+        "type": "date",
+        "value": "",
+        "disabled": ""
+    }, {
+        "id": "flowGroup",
+        "label": "フローグループ",
+        "type": "text",
+        "value": "F001",
+        "disabled": "disabled"
+    }, {
+        "id": "nodeTitle",
+        "label": "ノード名",
+        "type": "text",
+        "value": "Master Apply Node",
+        "disabled": "disabled"
+    }]
+}

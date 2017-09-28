@@ -1,0 +1,248 @@
+.drawerContainer, .drawerContent-wrap {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.drawerContainer {
+    background: #373a47;
+}
+
+
+/* Menu Button */
+
+.drawerMenuOpen-button {
+    position: fixed;
+    z-index: 6;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border: none;
+    text-indent: 2.5em;
+    font-size: 1.5em;
+    color: transparent;
+    background: transparent;
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.drawerMenuOpen-button::before {
+    position: absolute;
+    top: 0.25em;
+    right: 0.25em;
+    bottom: 0.25em;
+    left: 0.25em;
+    background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
+    content: '';
+}
+
+.drawerMenuOpen-button:hover {
+    opacity: 0.6;
+}
+
+
+/* Close Button */
+
+.drawerMenuClose-button {
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    right: 2em;
+    top: 1em;
+    overflow: hidden;
+    text-indent: 1em;
+    font-size: 0.75em;
+    border: none;
+    background: transparent;
+    color: transparent;
+}
+
+.drawerMenuClose-button::before, .drawerMenuClose-button::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: #bdc3c7;
+}
+
+.drawerMenuClose-button::before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.drawerMenuClose-button::after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+/* Menu */
+
+.drawerMenu-wrap {
+    position: fixed;
+    z-index: 10;
+    height: 100%;
+    background: #373a47;
+    padding: 50px 20px 20px;
+    font-size: 1.15em;
+	-webkit-transform: translate3d(calc(100% + 20px),0,0);
+	transform: translate3d(calc(100% + 20px),0,0);
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+/*
+.drawerMenu-wrap {
+    position: fixed;
+    z-index: 1001;
+    width: 300px;
+    height: 100%;
+    background: #373a47;
+    padding: 20px;
+    font-size: 1.15em;
+    -webkit-transition: left 0.4s;
+    transition: left 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}*/
+
+.drawerMenu, .drawerMenuIcon-list {
+    height: 100%;
+}
+
+/* 初期位置はY:100%で画面の下 メニューからの位置なのでメニューの下になる */
+.drawerMenuIcon-list {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.drawerMenuIcon-list div {
+    -webkit-transform: translate3d(0, 500px, 0);
+    transform: translate3d(0, 500px, 0);
+}
+
+.drawerMenuIcon-list, .drawerMenuIcon-list div {
+    -webkit-transition: -webkit-transform 0s 0.4s;
+    transition: transform 0s 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.drawerMenuIcon-list div:nth-child(2) {
+    -webkit-transform: translate3d(0, 1000px, 0);
+    transform: translate3d(0, 1000px, 0);
+}
+
+.drawerMenuIcon-list div:nth-child(3) {
+    -webkit-transform: translate3d(0, 1500px, 0);
+    transform: translate3d(0, 1500px, 0);
+}
+
+.drawerMenuIcon-list div:nth-child(4) {
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+}
+
+.drawerMenuIcon-list div:nth-child(5) {
+    -webkit-transform: translate3d(0, 2500px, 0);
+    transform: translate3d(0, 2500px, 0);
+}
+
+.drawerMenuIcon-list div:nth-child(6) {
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0);
+}
+
+.drawerMenuIcon-list div span {
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+
+/* Shown menu */
+
+
+.show-drawerMenu .drawerMenu-wrap {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+    opacity: 0.1;
+	-webkit-transition: -webkit-transform 0.8s, opacity 0.4s;
+	transition: transform 0.8s, opacity 0.4s;
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+.show-drawerMenu .drawerMenu-wrap:hover {
+    opacity: 1;
+}
+
+/*.show-drawerMenu .drawerMenu-wrap {
+    -webkit-transition: left 0.8s;
+    transition: left 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}*/
+
+.show-drawerMenu .drawerMenuIcon-list, .show-drawerMenu .drawerMenuIcon-list div {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.show-drawerMenu .drawerMenuIcon-list div {
+    -webkit-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+}
+
+
+.show-drawerMenu .drawerMenuOpen-button {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+/*
+.drawerContent-wrap {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.drawerContent {
+    position: relative;
+    background: #b4bad2;
+}
+
+.drawerContent::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    content: '';
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    -webkit-transition: opacity 0.4s, -webkit-transform 0s 0.4s;
+    transition: opacity 0.4s, transform 0s 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.show-drawerMenu .drawerContent::before {
+    opacity: 1;
+    -webkit-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+*/

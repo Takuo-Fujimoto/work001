@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    background-color: #9eebeb;
+}
+
+button {
+    font-size: 20px;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", HGMaruGothicMPRO, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.active {
+    color: Fuchsia;
+}
+
+.imageContainer {
+    position: relative;
+    width: 50%;
+}
+
+.imageImage {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.centerItem {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.imageMiddle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.imageContainer:hover .imageImage {
+    opacity: 0.3;
+}
+
+.imageContainer:hover .imageMiddle {
+    opacity: 1;
+}
+
+.imageText {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+
+/* type3 */
+
+.type3 {
+    list-style: none;
+    top: 0;
+    height: 180px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.type3 {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0 5px;
+    letter-spacing: 0;
+}
+
+.type3 dl {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 50px 10px;
+    color: #fff;
+    background: rgba(205, 92, 92, .9);
+}
+
+.type3 dl dt {
+    margin-bottom: 0.3em;
+}
+
+.type3 dl dd {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    word-break: break-all;
+}
+
+.type3 dl dd:last-of-type {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.type3 dl {
+    background-color: transparent;
+}
+
+.type3 dl dt, .type3 dl dd {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.type3:hover dl dt, .type3:hover dl dd {
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.type3 .fadeInBlock {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #cd5c5c;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.6s, border-radius 0.6s;
+    transition: opacity 0.2s, transform 0.6s, border-radius 0.6s;
+    transition-timing-function: ease-in;
+}
+
+.type3:hover .fadeInBlock {
+    opacity: 0.5;
+    -webkit-transform: translateX(0) skew(0);
+    transform: translateX(0) skew(0);
+}
+
+@keyframes highJamp {
+    0% {
+        top: 0
+    }
+    50% {
+        top: -200px
+    }
+    100% {
+        top: 0
+    }
+}
+
+@keyframes fadeIn1 {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.3
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn1 {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.3
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0
+    }
+    55% {
+        opacity: 0
+    }
+    65% {
+        opacity: 0.3
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn2 {
+    0% {
+        opacity: 0
+    }
+    55% {
+        opacity: 0
+    }
+    65% {
+        opacity: 0.3
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn3 {
+    0% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0
+    }
+    70% {
+        opacity: 0.3
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn3 {
+    0% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0
+    }
+    70% {
+        opacity: 0.3
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn4 {
+    0% {
+        opacity: 0
+    }
+    65% {
+        opacity: 0
+    }
+    75% {
+        opacity: 0.3
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn4 {
+    0% {
+        opacity: 0
+    }
+    65% {
+        opacity: 0
+    }
+    75% {
+        opacity: 0.3
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn5 {
+    0% {
+        opacity: 0
+    }
+    70% {
+        opacity: 0
+    }
+    80% {
+        opacity: 0.3
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn5 {
+    0% {
+        opacity: 0
+    }
+    70% {
+        opacity: 0
+    }
+    80% {
+        opacity: 0.3
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn6 {
+    0% {
+        opacity: 0
+    }
+    75% {
+        opacity: 0
+    }
+    85% {
+        opacity: 0.3
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn6 {
+    0% {
+        opacity: 0
+    }
+    75% {
+        opacity: 0
+    }
+    85% {
+        opacity: 0.3
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fadeOutHeight {
+    /*0% {
+        height: 20px
+    }*/
+    100% {
+        height: 0px;
+        margin-top: 0px;
+    }
+}
+
+@-webkit-keyframes fadeOutHeight {
+    /*0% {
+        height: 20px
+    }*/
+    100% {
+        height: 0px;
+        margin-top: 0px;
+    }
+}
+.pyonpyon span {
+    animation: pyon 0.3s linear;
+    position: relative;
+}
+
+@keyframes pyon {
+    0% {top: 0}
+    50% {top:-120px}
+    100%{top: 0}
+}

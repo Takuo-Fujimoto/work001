@@ -1,0 +1,2 @@
+SET CURRENT_DIR=%CD%
+atom "%CURRENT_DIR%"

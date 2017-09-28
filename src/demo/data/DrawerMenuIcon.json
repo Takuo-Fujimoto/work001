@@ -1,0 +1,34 @@
+{
+    "iconCreate": [{
+        "id": "applyButton",
+        "label": "Apply!!",
+        "icon": "KamiHikouki",
+        "actionName": "Applying"
+    }, {
+        "id": "saveButton",
+        "label": "Save",
+        "icon": "KamiHikoukiBlack",
+        "actionName": "Saving"
+    }, {
+        "id": "searchButton",
+        "label": "Search",
+        "icon": "SearchShadow",
+        "selectedColor": "#ffa500",
+        "noLoading": true
+    }, {
+        "id": "checkButton",
+        "label": "Check",
+        "icon": "CheckSquare",
+        "actionName": "Checking"
+    }, {
+        "id": "fillButton",
+        "label": "Data Fill",
+        "icon": "Pikoon",
+        "actionName": "Filling"
+    }, {
+        "id": "helpButton",
+        "label": "Input Help",
+        "icon": "CatHand",
+        "actionName": "Helping"
+    }]
+}

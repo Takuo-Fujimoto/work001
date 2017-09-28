@@ -1,0 +1,52 @@
+{
+    "masters": [{
+        "id": "M001",
+        "name": "品目マスタ",
+        "description": "企業活動を行う上で扱う「モノ」に関して、販売、購買、在庫管理の情報を持つマスタです。"
+    }, {
+        "id": "M002",
+        "name": "仕入先マスタ",
+        "description": "商品の仕入先企業の情報を持つマスタです。"
+    }, {
+        "id": "M003",
+        "name": "得意先マスタ",
+        "description": "商品の販売先企業の情報を持つマスタです。"
+    }],
+    "works": [{
+        "id": "W001",
+        "name": "Create",
+        "linkPath": "/Create",
+        "fadeInAnime": "fadeIn1",
+        "description": "新規にマスタを登録します。"
+    }, {
+        "id": "W002",
+        "name": "Update",
+        "linkPath": "/Update",
+        "fadeInAnime": "fadeIn2",
+        "description": "既存のマスタを変更します。"
+    }, {
+        "id": "W003",
+        "name": "Delete",
+        "linkPath": "/Delete",
+        "fadeInAnime": "fadeIn3",
+        "description": "既存のマスタを削除します。"
+    }, {
+        "id": "W004",
+        "name": "Approve",
+        "linkPath": "/ApproveList",
+        "fadeInAnime": "fadeIn4",
+        "description": "自分が承認すべき案件を表示します。"
+    }, {
+        "id": "W005",
+        "name": "My Work(on Going)",
+        "linkPath": "/ApplyList",
+        "fadeInAnime": "fadeIn5",
+        "description": "自分が申請した案件の内、進行中の案件を表示します。"
+    }, {
+        "id": "W006",
+        "name": "My Work(Finish)",
+        "linkPath": "/PastList",
+        "fadeInAnime": "fadeIn6",
+        "description": "自分が申請した案件の内、完了した案件を表示します。"
+    }]
+}

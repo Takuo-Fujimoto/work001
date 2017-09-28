@@ -1,0 +1,43 @@
+
+.container {
+    text-align: center;
+    width: auto;
+    height: 100px;
+}
+
+.awesome {
+  position: absolute;
+  right: 48%;
+  width: 50px;
+  text-align: center;
+}
+/*button {
+  position: absolute;
+  top: 50px;
+  right: 43%;
+}*/
+
+.awesome1 {
+  color: blue;
+}
+.awesome2 {
+  color: red;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

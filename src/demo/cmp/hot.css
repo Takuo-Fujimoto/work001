@@ -1,0 +1,22 @@
+.handsontable {
+    font-size: 12px;
+}
+
+.handsontable col.rowHeader {
+    width: 220px;
+}
+
+.handsontable th span.rowHeader {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.hiddenAndNoHeight {
+    overflow: hidden;
+    height: 0px;
+}
+
+path {
+    fill: Red;
+}

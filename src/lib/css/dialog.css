@@ -1,0 +1,74 @@
+.dialog, .dialog__overlay {
+    max-width: 80%;
+}
+
+/*-webkit-align-items: center;
+align-items: center;
+-webkit-justify-content: center;
+justify-content: center;
+display: -webkit-flex;
+display: flex;*/
+.dialog {
+    pointer-events: none;
+	left: 0;
+	right: 0;
+	top: 2em;
+	margin: 0 auto;
+	position: fixed;
+	z-index: 99999;
+	border-radius: 5px;
+}
+
+.dialog__overlay {
+    position: absolute;
+    z-index: 1;
+    background: rgba(55, 58, 71, 0.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    -webkit-backface-visibility: hidden;
+}
+
+.dialog--open .dialog__overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dialog__content {
+    width: 100%;
+    background: #fff;
+    padding: 4em 1em 1em;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    opacity: 0;
+	border-radius: 5px;
+}
+
+.dialog--open .dialog__content {
+    pointer-events: auto;
+}
+
+
+/* Content */
+
+.dialog h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 2em;
+    padding: 0 0 2em;
+    margin: 0;
+}
+
+.dialogHeader {
+	z-index: 6;
+	position: absolute;
+    background-color: #ffa5ec;
+	height: 2.5em;
+	width: calc(100%);
+	border-radius: 5px;
+}
+#messageArea{
+	overflow: auto;
+	max-height: 90%;
+}
